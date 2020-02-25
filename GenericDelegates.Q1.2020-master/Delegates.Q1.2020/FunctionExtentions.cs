@@ -39,6 +39,7 @@ namespace Delegates.Q1._2020
 
                 return result;
             };
+
             return returnPredicate;
         }
     }
