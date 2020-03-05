@@ -34,7 +34,7 @@ namespace Delegates.Q1._2020
                 bool result = true;
                 for (int i = 0; i < predicates.Length; i++)
                 {
-                    result &= predicates[i].Invoke(obj);
+                    result &= (predicates[i]?.Invoke(obj) ?? true);
                 }
 
                 return result;
